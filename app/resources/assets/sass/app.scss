@@ -1,9 +1,27 @@
-
-// Fonts
-@import url(https://fonts.googleapis.com/css?family=Raleway:300,400,600);
-
-// Variables
 @import "variables";
+@import "utility";
+@import "header";
+@import "footer";
+@import "shop";
 
-// Bootstrap
-@import "node_modules/bootstrap-sass/assets/stylesheets/bootstrap";
+.img-block {
+  display: block;
+  margin: 1em auto;
+  padding: 2em;
+}
+
+.header-table-small {
+  display: table;
+  width: 100%;
+  max-height: 30vh;
+  height: 30vh;
+  overflow: hidden;
+  .table-cell-small {
+    display: table-cell;
+    vertical-align: middle;
+    img {
+      display: block;
+      width: 100%;
+    }
+  }
+}

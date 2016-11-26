@@ -1,0 +1,17 @@
+.text-center {
+  text-align: center;
+}
+
+.stripped-center {
+  height: 4px;
+  display: block;
+  width: 17%;
+  margin: 1em auto;
+  &.blue {
+    background-color: $sac-blue-color;
+  }
+}
+
+.section {
+  padding: 2em 0;
+}
