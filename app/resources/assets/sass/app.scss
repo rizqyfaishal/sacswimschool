@@ -26,35 +26,15 @@
 @import "modules/spacing";
 @import "modules/media-queries";
 
-@import "variables";
-@import "utility";
+
+@import "font-awesome";
+
 @import "header";
 @import "footer";
 @import "shop";
+@import "nav";
 
-
-
-.img-block {
-  display: block;
-  margin: 1em auto;
-  padding: 2em;
-  &.small {
-    padding: 0;
-  }
+.title {
+  color: rgba(246, 246, 246, 1);
 }
 
-.header-table-small {
-  display: table;
-  width: 100%;
-  max-height: 30vh;
-  height: 30vh;
-  overflow: hidden;
-  .table-cell-small {
-    display: table-cell;
-    vertical-align: middle;
-    img {
-      display: block;
-      width: 100%;
-    }
-  }
-}

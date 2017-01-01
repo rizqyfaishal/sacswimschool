@@ -18,3 +18,14 @@
 .u-pull-left {
   float: left;
 }
+
+.text-center {
+  text-align: center;
+}
+
+button {
+  &.center {
+    display: block;
+    margin: 1em auto;
+  }
+}

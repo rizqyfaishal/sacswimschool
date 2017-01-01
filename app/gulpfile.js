@@ -16,8 +16,8 @@ gulp.task('sass', function () {
 gulp.task('js',function () {
     del('./build/js/**/*.js').then(function () {
         return gulp
-            .src('./src/js/app.js')
+            .src(['./resources/assets/js/module.js','./resources/assets/js/app.js'])
             .pipe(concat('app.js'))
-            .pipe(gulp.dest('./build/js/'));
+            .pipe(gulp.dest('./public/js/'));
     });
 });
