@@ -126,9 +126,11 @@
 }
 
 .header-table {
-  background: url("../img/header.jpg");
+  background: url("../img/header.jpg") fixed;
   background-size: cover;
 }
+
+
 .header-table .overlay {
   background-color: rgba(232,232,232,.7);
 }

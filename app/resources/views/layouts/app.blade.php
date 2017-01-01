@@ -33,6 +33,7 @@
     <script src="../semantic/dist/components/visibility.js"></script>
     <script src="../semantic/dist/components/sidebar.js"></script>
     <script src="../semantic/dist/components/transition.js"></script>
+    <script src="../js/jquery.stellar.js"></script>
     <script src="../js/app.js"></script>
 </head>
 <body>

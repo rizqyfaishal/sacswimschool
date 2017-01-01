@@ -117,7 +117,7 @@
   font-size: 3em; }
 
 .header-table {
-  background: url("../img/header.jpg");
+  background: url("../img/header.jpg") fixed;
   background-size: cover; }
 
 .header-table .overlay {
@@ -145,6 +145,8 @@ footer .ui.segment {
   display: block;
   margin: 1em auto;
   padding: 2em; }
+  .img-block.small {
+    padding: 0; }
 
 .header-table-small {
   display: table;
