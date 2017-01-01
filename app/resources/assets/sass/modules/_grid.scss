@@ -48,6 +48,7 @@
 
   .one.column,
   .one.columns          { width: grid-column-width(1);  }
+  .one-half.columns     { width: grid-column-width(1.5) }
   .two.columns          { width: grid-column-width(2);  }
   .three.columns        { width: grid-column-width(3);  }
   .four.columns         { width: grid-column-width(4);  }

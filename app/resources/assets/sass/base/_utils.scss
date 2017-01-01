@@ -29,3 +29,17 @@ button {
     margin: 1em auto;
   }
 }
+
+.stripped-center {
+  height: 4px;
+  display: block;
+  width: 17%;
+  margin: 1em auto;
+  &.blue {
+    background-color: rgba(48, 150, 246, 0.8);
+  }
+}
+
+.section {
+  padding: 2em 0;
+}

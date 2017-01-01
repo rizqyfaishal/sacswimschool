@@ -1,5 +1,5 @@
 .nav {
-  position: absolute;
+  position: fixed;
   left: 0;
   width: 100%;
   z-index: 10;
@@ -66,6 +66,9 @@
     img {
       margin-top: 10px;
     }
+  }
+  &.bordered-bottom {
+    border-bottom: 1px solid rgba(219,219,219,0.5);
   }
   .right {
     display: block;

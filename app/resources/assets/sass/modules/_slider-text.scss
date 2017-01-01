@@ -1,0 +1,27 @@
+#carousel {
+  position: relative;
+  width:100%;
+  margin:0 auto;
+}
+
+#slides {
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+}
+
+#slides ul {
+  list-style: none;
+  width:100%;
+  margin: 0;
+  padding: 0;
+  position: relative;
+}
+
+#slides li {
+  width:100%;
+  float:left;
+  position: relative;
+}
+
+

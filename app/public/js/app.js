@@ -9813,94 +9813,92 @@
     return jQuery;
 }));
 
-(function( $ ) {
-    $.fn.slideshow = function( options ) {
-        options = $.extend({
-            wrapper: ".slider-wrapper",
-            previous: ".slider-previous",
-            next: ".slider-next",
-            slides: ".slide",
-            nav: ".slider-nav",
-            speed: 500,
-            easing: "linear"
+$(document).ready(function () {
 
-        }, options);
+    var counter = 0;
+    // $('#nav-top')
+    var mark = true;
+    $(window).on('scroll',function (e) {
+        console.log($(window).scrollTop());
+         if($(window).scrollTop() > 250){
+             if(mark){
+                 $('#nav-top').animate({ top: '-40px'},700);
+                 $('#nav').animate({ opacity: 1, top: '0px'}, 700).addClass('bordered-bottom');
 
-        var slideTo = function( slide, element ) {
-            var $currentSlide = $( options.slides, element ).eq( slide );
+                 mark = false;
+             }
+         } else {
+            if(!mark){
+                $('#nav-top').animate({ top: '0px'},700);
+                $('#nav').animate({ opacity: 0.95, top: '40px'}, 700).removeClass('bordered-bottom');
+                mark = true;
+            }
+         }
+    });
 
-            $( options.wrapper, element ).
-            animate({
-                left: - $currentSlide.position().left
-            }, options.speed, options.easing );
+    var speed = 5000;
 
-        };
+    var run = setInterval(rotate, speed);
+    var slides = $('.slide');
+    var container = $('#slides ul');
+    var elm = container.find(':first-child').prop("tagName");
+    var item_width = container.width();
+    var previous = 'prev'; //id of previous button
+    var next = 'next'; //id of next button
+    slides.width(item_width); //set the slides to the correct pixel width
+    container.parent().width(item_width);
+    container.width(slides.length * item_width); //set the slides container to the correct total width
+    container.find(elm + ':first').before(container.find(elm + ':last'));
+    resetSlides();
 
-        return this.each(function() {
-            var $element = $( this ),
-                $previous = $( options.previous, $element ),
-                $next = $( options.next, $element ),
-                index = 0,
-                total = $( options.slides ).length;
 
-            $( options.slides, $element ).width( $( window ).width() ).each(function() {
-                var $slide = $( this );
-                var image = $slide.data( "image" );
-                $slide.css( "backgroundImage", "url(" + image + ")" );
+    //if user clicked on prev button
+
+    $('#controls button').click(function (e) {
+        //slide the item
+
+        if (container.is(':animated')) {
+            return false;
+        }
+        if (e.target.id == previous) {
+            container.stop().animate({
+                'left': 0
+            }, 1500, function () {
+                container.find(elm + ':first').before(container.find(elm + ':last'));
+                resetSlides();
             });
-            $( options.wrapper, $element ).width( $( window ).width() * total );
+        }
 
-            $element.hover(function() {
-                $( options.nav, $element ).stop( true, true ).show();
-            }, function() {
-                $( options.nav, $element ).stop( true, true ).hide();
-
+        if (e.target.id == next) {
+            container.stop().animate({
+                'left': item_width * -2
+            }, 1500, function () {
+                container.find(elm + ':last').after(container.find(elm + ':first'));
+                resetSlides();
             });
+        }
 
-            $next.on( "click", function() {
-                index++;
-                $previous.show();
+        //cancel the link behavior
+        return false;
 
-                if( index == total - 1 ) {
-                    index = total - 1;
-                    $next.hide();
-                }
+    });
 
-                slideTo( index, $element );
-
-            });
-
-            $previous.on( "click", function() {
-                index--;
-                $next.show();
-
-                if( index == 0 ) {
-                    index = 0;
-                    $previous.hide();
-                }
-
-                slideTo( index, $element );
-
-            });
+    //if mouse hover, pause the auto rotation, otherwise rotate it
+    container.parent().mouseenter(function () {
+        clearInterval(run);
+    }).mouseleave(function () {
+        run = setInterval(rotate, speed);
+    });
 
 
+    function resetSlides() {
+        //and adjust the container so current is in the frame
+        container.css({
+            'left': -1 * item_width
         });
-    };
-
-    $(function() {
-        $( "#main-slider" ).slideshow();
-
-    });
-
-})( jQuery );
-
-
-
-
-$(document).ready(function(){
-    $('.full-slider').flickity({
-        // options
-        lazyLoad: true
-    });
-
+    }
 });
+
+function rotate() {
+    $('#next').click();
+}

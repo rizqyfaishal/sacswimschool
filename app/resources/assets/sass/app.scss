@@ -25,6 +25,8 @@
 @import "modules/tables";
 @import "modules/spacing";
 @import "modules/media-queries";
+@import "modules/quote";
+@import "modules/slider-text";
 
 
 @import "font-awesome";
@@ -33,8 +35,19 @@
 @import "footer";
 @import "shop";
 @import "nav";
+@import "section";
+@import "programs";
 
 .title {
   color: rgba(246, 246, 246, 1);
+}
+
+
+.swimmer-offset {
+  margin-left: -34em;
+}
+
+.brand-logo {
+  height: 70px;
 }
 

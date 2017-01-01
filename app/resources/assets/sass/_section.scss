@@ -1,0 +1,33 @@
+.section {
+  &:not(.except){
+    margin-top: 2em;
+  }
+  h1 {
+    font-size: 250%;
+  }
+  .container {
+    .row:not(.except) {
+      padding-top: 2em;
+      .columns {
+        h2 {
+          font-size: 180%;
+        }
+        .img-block {
+          width: 90px;
+          display: block;
+          margin: 0 auto;
+        }
+      }
+    }
+  }
+  &.gray {
+    background-color: #f2f4f6;
+    border-top: 1px solid #eceef0;
+    border-bottom: 1px solid #eceef0;
+  }
+  &.blue {
+    background-color: lighten($dark-grey, 13.5%);
+    border-top: 1px solid #eceef0;
+    border-bottom: 1px solid #eceef0;
+  }
+}
