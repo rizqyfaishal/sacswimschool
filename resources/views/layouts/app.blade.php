@@ -8,12 +8,10 @@
     <meta http-equiv="refresh" content="30">
     <title>Homepage - Semantic</title>
     <link href='//fonts.googleapis.com/css?family=Raleway:400,300,600' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
     <link rel="stylesheet" href="../css/app.css">
 </head>
 <body>
 @yield('content')
-<script type="text/javascript" src="slick/slick.min.js"></script>
 <script src="../js/app.min.js"></script>
 </body>
 
