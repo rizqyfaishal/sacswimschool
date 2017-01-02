@@ -23,16 +23,6 @@
             </ul>
         </div>
         <div class="plan">
-            <h3>Standard<span>$17</span></h3>
-            <a class="signup" href="">Sign up</a>
-            <ul>
-                <li><b>3GB</b> Disk Space</li>
-                <li><b>25GB</b> Monthly Bandwidth</li>
-                <li><b>5</b> Email Accounts</li>
-                <li><b>Unlimited</b> subdomains</li>
-            </ul>
-        </div>
-        <div class="plan">
             <h3>Basic<span>$9</span></h3>
             <a class="signup" href="">Sign up</a>
             <ul>
