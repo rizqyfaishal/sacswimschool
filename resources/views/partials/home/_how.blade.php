@@ -41,6 +41,17 @@
        </div>
    </div>
 </div>
-<div class="section blue">
-
+<div class="section blue subscribe">
+    <div class="container">
+        <div class="row">
+            <div class="columns twelve">
+                <h3>The fastest way to grow your business with the leader in Technology.</h3>
+                <p>Check out our options and features included.</p>
+                <form class="subscribe-form">
+                    <input type="text" name="subscribe" placeholder="Your email for subscribe" style="width: 370px;">
+                    <button type="submit" class="text-center">Send</button>
+                </form>
+            </div>
+        </div>
+    </div>
 </div>

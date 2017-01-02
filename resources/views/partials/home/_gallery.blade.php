@@ -7,39 +7,40 @@
                 <div class="slider responsive">
                     <div>
                         <div class="polaroid">
-                            <img src="http://lorempixel.com/400/200/sports/" alt="" >
+                            <a href="http://lorempixel.com/400/200/sports/" data-lightbox="gallery">
+                                <img src="http://lorempixel.com/400/200/sports/" alt="" >
+                            </a>
                         </div>
                     </div>
                     <div>
                         <div class="polaroid">
-                            <img src="http://lorempixel.com/400/200/sports/" alt="" >
+                            <a href="http://lorempixel.com/400/200/sports/" data-lightbox="gallery">
+                                <img src="http://lorempixel.com/400/200/sports/" alt="" >
+                            </a>
                         </div>
                     </div>
                     <div>
                         <div class="polaroid">
-                            <img src="http://lorempixel.com/400/200/sports/" alt="" >
+                            <a href="http://lorempixel.com/400/200/sports/" data-lightbox="gallery">
+                                <img src="http://lorempixel.com/400/200/sports/" alt="" >
+                            </a>
                         </div>
                     </div>
                     <div>
                         <div class="polaroid">
-                            <img src="http://lorempixel.com/400/200/sports/" alt="" >
+                            <a href="http://lorempixel.com/400/200/sports/" data-lightbox="gallery">
+                                <img src="http://lorempixel.com/400/200/sports/" alt="" >
+                            </a>
                         </div>
                     </div>
                     <div>
                         <div class="polaroid">
-                            <img src="http://lorempixel.com/400/200/sports/" alt="" >
+                            <a href="http://lorempixel.com/400/200/sports/" data-lightbox="gallery">
+                                <img src="http://lorempixel.com/400/200/sports/" alt="" >
+                            </a>
                         </div>
                     </div>
-                    <div>
-                        <div class="polaroid">
-                            <img src="http://lorempixel.com/400/200/sports/" alt="" >
-                        </div>
-                    </div>
-                    <div>
-                        <div class="polaroid">
-                            <img src="http://lorempixel.com/400/200/sports/" alt="" >
-                        </div>
-                    </div>
+
                 </div>
             </div>
         </div>
