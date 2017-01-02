@@ -41,6 +41,7 @@
 @import "gallery";
 @import "lightbox";
 @import "testimoni";
+@import "about";
 
 .title {
   color: rgba(246, 246, 246, 1);
@@ -53,5 +54,13 @@
 
 .brand-logo {
   height: 70px;
+}
+
+p.quote {
+  &:before, &:after {
+    content: '"';
+  }
+  font-size: 130%;
+  font-weight: bolder;
 }
 

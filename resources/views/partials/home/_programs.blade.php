@@ -3,30 +3,38 @@
     <span class="stripped-center blue"></span>
     <div id="pricing-table" class="clear">
         <div class="plan">
-            <h3>SAC Swimming Fit<span>$59</span></h3>
+            <h3>SAC Swimming School<span>$59</span></h3>
             <a class="button button-primary" href="">Learn More</a>
             <ul>
-                <li><b>10GB</b> Disk Space</li>
+                <li class="bold">Program sekolah renang yang berbasis kurikulum</li>
+                <li>Kelas Privat</li>
+                <li>Kelas Semi Privat</li>
+                <li>Kelas Group / Kelompok</li>
+                <li>Program Ekstrakurikuler</li>
+                <li>Program Pembinaan O2SN (Olimpiade Olahraga Siswa Nasional)</li>
             </ul>
         </div>
         <div class="plan" id="most-popular">
-            <h3>SAC Swimming School<span>$29</span></h3>
+            <h3>SAC Swimming Fit<span>$29</span></h3>
             <a class="button button-primary" href="">Learn More</a>
             <ul>
-                <li><b>5GB</b> Disk Space</li>
-                <li><b>50GB</b> Monthly Bandwidth</li>
-                <li><b>10</b> Email Accounts</li>
-                <li><b>Unlimited</b> subdomains</li>
+                <li class="bold">Program kebugaran dan penyembuhan dengan media renang</li>
+                <li>Aquatic Physical Therapy</li>
+                <li>Adapted Swimming Treatment</li>
             </ul>
         </div>
         <div class="plan">
             <h3>SAC Swimming Pro<span>$9</span></h3>
             <a class="button button-primary" href="">Learn More</a>
             <ul>
-                <li><b>1GB</b> Disk Space</li>
-                <li><b>10GB</b> Monthly Bandwidth</li>
-                <li><b>2</b> Email Accounts</li>
-                <li><b>Unlimited</b> subdomains</li>
+                <li class="bold">Program kekhususan untuk atlet – atlet yang ingin berlomba di tingkat nasional dengan menu
+                    latihan yang berstandar internasional.</li>
+                <li>KU senior (> 19 Tahun)</li>
+                <li>KU I (16 – 18 Tahun)</li>
+                <li>KU II (14 – 15 Tahun)</li>
+                <li>KU III (12 – 13 Tahun)</li>
+                <li>KU IV (10 – 11 Tahun)</li>
+                <li>KU V (< 9 Tahun)</li>
             </ul>
         </div>
     </div>

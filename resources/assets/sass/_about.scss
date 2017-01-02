@@ -1,0 +1,32 @@
+.visi {
+  .container {
+    padding-top: 3em;
+  }
+  background: url('/img/bg-facts.png') no-repeat center;
+  .circle-block {
+    color: white;
+    display: block;
+    margin: 0 auto;
+    border-radius: 50%;
+    width: 140px;
+    height: 140px;
+    background-color: #33c3f0;;
+    h1 {
+      line-height: 140px;
+    }
+  }
+  .circle-div {
+    &:nth-child(2n-1) {
+      .circle-block {
+        margin-top: 6em;
+        margin-bottom: 1em;
+      }
+    }
+    &:nth-child(2n){
+      .circle-block {
+        margin-bottom: 1em;
+        margin-top: -3em;
+      }
+    }
+  }
+}
