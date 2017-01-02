@@ -1,6 +1,8 @@
 var gulp = require('gulp'),
     del = require('del'),
     sass = require('gulp-sass'),
+    rename = require('gulp-rename'),
+    uglify = require('gulp-uglify'),
     concat = require('gulp-concat');
 
 
@@ -18,6 +20,8 @@ gulp.task('js',function () {
         return gulp
             .src(['./resources/assets/js/module.js','./resources/assets/js/app.js'])
             .pipe(concat('app.js'))
+            .pipe(rename('app.min.js'))
+            .pipe(uglify())
             .pipe(gulp.dest('./public/js/'));
     });
 });

@@ -1,17 +1,17 @@
 #pricing-table {
   margin: 50px auto;
   text-align: center;
-  width: 669px;
+  width: 790px;
 }
 
 #pricing-table .plan {
   font: 12px 'Raleway';
-  text-shadow: 0 1px rgba(255,255,255,.8);
+  //text-shadow: 0 1px rgba(255,255,255,.8);
   background: #fff;
   border: 1px solid #ddd;
   color: #333;
   padding: 20px;
-  width: 180px; /* plan width = 180 + 20 + 20 + 1 + 1 = 222px */
+  width: 220px; /* plan width = 180 + 20 + 20 + 1 + 1 = 222px */
   float: left;
   position: relative;
 }

@@ -100,7 +100,8 @@
   .offset-by-one-half.column,
   .offset-by-one-half.column   { margin-left: grid-offset-length(6);  }
 
-
+  .offset-by-half.columns,
+  .offset-by-half.columns   { margin-left: grid-offset-length(0.5);  }
 }
 
 // Clearing

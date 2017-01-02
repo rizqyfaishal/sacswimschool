@@ -38,6 +38,10 @@ button {
   &.blue {
     background-color: rgba(48, 150, 246, 0.8);
   }
+  &.small {
+    width: 10%;
+    height: 2.5px;
+  }
 }
 
 .section {
@@ -46,4 +50,8 @@ button {
 
 .text-justify {
   text-align: justify;
+}
+
+.bold {
+  font-weight: bolder;
 }

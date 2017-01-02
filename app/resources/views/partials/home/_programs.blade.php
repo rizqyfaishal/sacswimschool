@@ -4,7 +4,7 @@
     <div id="pricing-table" class="clear">
         <div class="plan">
             <h3>Enterprise<span>$59</span></h3>
-            <a class="signup" href="">Sign up</a>
+            <a class="button button-primary" href="">Sign up</a>
             <ul>
                 <li><b>10GB</b> Disk Space</li>
                 <li><b>100GB</b> Monthly Bandwidth</li>
@@ -14,7 +14,7 @@
         </div>
         <div class="plan" id="most-popular">
             <h3>Professional<span>$29</span></h3>
-            <a class="signup" href="">Sign up</a>
+            <a class="button button-primary" href="">Sign up</a>
             <ul>
                 <li><b>5GB</b> Disk Space</li>
                 <li><b>50GB</b> Monthly Bandwidth</li>
@@ -24,7 +24,7 @@
         </div>
         <div class="plan">
             <h3>Basic<span>$9</span></h3>
-            <a class="signup" href="">Sign up</a>
+            <a class="button button-primary" href="">Sign up</a>
             <ul>
                 <li><b>1GB</b> Disk Space</li>
                 <li><b>10GB</b> Monthly Bandwidth</li>

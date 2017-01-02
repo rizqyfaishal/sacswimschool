@@ -28,7 +28,7 @@
                 <li><a class="item" href="#">Program</a></li>
                 <li><a class="item" href="{{ action('ShopController@index') }}">Shop</a></li>
                 <li><a class="item" href="#">Contact</a></li>
-                <li><a class="item" href="#"><span class="button button-primary">Register</span></a></li>
+                <li><a class="item" href="#"><span class="button button-primary">Daftar</span></a></li>
             </ul>
         </div>
     </div>

@@ -82,6 +82,13 @@ $(document).ready(function () {
             'left': -1 * item_width
         });
     }
+
+    var testimoni;
+    $.get('/testimoni.json',function (data) {
+        testimoni = JSON.parse(data);
+        console.log(testimoni);
+    });
+
 });
 
 function rotate() {
