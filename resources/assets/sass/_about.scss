@@ -3,6 +3,12 @@
     padding-top: 3em;
   }
   background: url('/img/bg-facts.png') no-repeat center;
+  @media screen and (max-width: 480px){
+     background: none;
+    .container {
+      padding-top: 0;
+    }
+  }
   .circle-block {
     color: white;
     display: block;
@@ -11,6 +17,9 @@
     width: 140px;
     height: 140px;
     background-color: #33c3f0;;
+    @media screen and (max-width:480px) {
+        margin-bottom: 1em;
+    }
     h1 {
       line-height: 140px;
     }
@@ -20,12 +29,18 @@
       .circle-block {
         margin-top: 6em;
         margin-bottom: 1em;
+        @media screen and (max-width: 480px){
+          margin: 1em auto;
+        }
       }
     }
     &:nth-child(2n){
       .circle-block {
         margin-bottom: 1em;
         margin-top: -3em;
+        @media screen and (max-width: 480px){
+          margin: 1em auto;
+        }
       }
     }
   }

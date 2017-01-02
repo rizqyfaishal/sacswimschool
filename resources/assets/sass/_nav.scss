@@ -10,7 +10,10 @@
 }
 
 #nav-top {
-  top: 0;
+  @media screen and (max-width: 480px) {
+    display: none;
+  }
+    top: 0;
   height: 40px;
   border-bottom: 1px solid rgba(219,219,219,0.5);
   .side-left {
@@ -57,6 +60,10 @@
 }
 
 #nav {
+  @media screen and (max-width: 480px) {
+    top: 0;
+    display: none;
+  }
   top: 40px;
   height: $nav-height;
   opacity: 0.95;
@@ -73,6 +80,9 @@
   .right {
     display: block;
     float: right;
+    @media screen and (max-width: 480px){
+      display: none;
+    }
     ul {
       &.menu {
         margin: 0;

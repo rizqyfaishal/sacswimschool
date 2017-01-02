@@ -4,21 +4,23 @@ $(document).ready(function () {
     // $('#nav-top')
     var mark = true;
     $(window).on('scroll',function (e) {
-        console.log($(window).scrollTop());
-         if($(window).scrollTop() > 250){
-             if(mark){
-                 $('#nav-top').animate({ top: '-40px'},700);
-                 $('#nav').animate({ opacity: 1, top: '0px'}, 700).addClass('bordered-bottom');
+        console.log($(window).innerWidth());
+        if($(window).innerWidth() > 768){
+            if($(window).scrollTop() > 250){
+                if(mark){
+                    $('#nav-top').animate({ top: '-40px'},700);
+                    $('#nav').animate({ opacity: 1, top: '0px'}, 700).addClass('bordered-bottom');
 
-                 mark = false;
-             }
-         } else {
-            if(!mark){
-                $('#nav-top').animate({ top: '0px'},700);
-                $('#nav').animate({ opacity: 0.95, top: '40px'}, 700).removeClass('bordered-bottom');
-                mark = true;
+                    mark = false;
+                }
+            } else {
+                if(!mark){
+                    $('#nav-top').animate({ top: '0px'},700);
+                    $('#nav').animate({ opacity: 0.95, top: '40px'}, 700).removeClass('bordered-bottom');
+                    mark = true;
+                }
             }
-         }
+        }
     });
 
     var speed = 5000;

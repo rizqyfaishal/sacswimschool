@@ -105,7 +105,7 @@
   button {
     z-index: 20;
     position: absolute;
-    bottom: 0;
+    bottom: -2em;
     &.slick-next {
       right: 0;
     }
@@ -127,9 +127,15 @@
     bottom: 0;
     &.slick-next {
       right: 42%;
+      @media screen and (max-width: 480px){
+        right: 0;
+      }
     }
     &.slick-prev {
       left: 42%;
+      @media screen and (max-width: 480px){
+        left: 0;
+      }
     }
 
   }

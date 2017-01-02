@@ -54,6 +54,8 @@
 
 .brand-logo {
   height: 70px;
+  display: block;
+  margin: 2em auto;
 }
 
 p.quote {
@@ -64,3 +66,17 @@ p.quote {
   font-weight: bolder;
 }
 
+@media screen and (max-width: 480px){
+   h1 {
+     &.text-center {
+       font-size: 180%;
+     }
+   }
+
+  .subscribe-form {
+    input {
+      width: 100%!important;
+      text-align: center;
+    }
+  }
+}

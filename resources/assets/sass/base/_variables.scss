@@ -2,6 +2,7 @@
 //––––––––––––––––––––––––––––––––––––––––––––––––––
 
 // Breakpoints
+$bp-less-than-mobile      : "min-width: 320px" !default;
 $bp-larger-than-mobile    : "min-width: 400px" !default;
 $bp-larger-than-phablet   : "min-width: 550px" !default;
 $bp-larger-than-tablet    : "min-width: 750px" !default;
