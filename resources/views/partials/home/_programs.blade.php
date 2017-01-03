@@ -1,4 +1,4 @@
-<div class="section gray except">
+<div class="section gray except" id="program">
     <h1 class="text-center">Our Program</h1>
     <span class="stripped-center blue"></span>
     <div class="container">

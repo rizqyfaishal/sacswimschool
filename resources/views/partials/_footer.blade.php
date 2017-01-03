@@ -1,4 +1,4 @@
-<div class="section except gray primary">
+<div class="section except gray primary" id="footer">
     <div class="container">
         <div class="row except">
             <div class="columns four">

@@ -23,11 +23,11 @@
         </div>
         <div class="right">
             <ul class="menu">
-                <li><a class="active item" href="#">Home</a></li>
-                <li><a class="item" href="#">About</a></li>
-                <li><a class="item" href="#">Program</a></li>
+                <li><a class="active item" href="#home">Home</a></li>
+                <li><a class="item" href="#about">About</a></li>
+                <li><a class="item" href="#program">Program</a></li>
                 <li><a class="item" href="{{ action('ShopController@index') }}">Shop</a></li>
-                <li><a class="item" href="#">Contact</a></li>
+                <li><a class="item" href="#footer">Contact</a></li>
                 <li><a class="item" href="#"><span class="button button-primary">Daftar</span></a></li>
             </ul>
         </div>
@@ -40,11 +40,11 @@
     <div class="side-nav">
         <div class="side-nav-content">
             <ul class="menu">
-                <li><a class="active item" href="#">Home</a></li>
-                <li><a class="item" href="#">About</a></li>
-                <li><a class="item" href="#">Program</a></li>
+                <li><a class="active item" href="#home">Home</a></li>
+                <li><a class="item" href="#about">About</a></li>
+                <li><a class="item" href="#program">Program</a></li>
                 <li><a class="item" href="{{ action('ShopController@index') }}">Shop</a></li>
-                <li><a class="item" href="#">Contact</a></li>
+                <li><a class="item" href="#footer">Contact</a></li>
                 <li><a class="item" href="#"><span class="button button-primary">Daftar</span></a></li>
             </ul>
         </div>

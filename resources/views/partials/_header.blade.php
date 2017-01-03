@@ -1,4 +1,4 @@
-<div class="header">
+<div class="header" id="home">
     <div class="overlay"></div>
     <div class="content">
         <div class="container">

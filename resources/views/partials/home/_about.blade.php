@@ -1,4 +1,4 @@
-<div class="section gray except">
+<div class="section gray except" id="about">
     <h1 class="text-center">Tentang Sailfish Aquatic Club</h1>
     <span class="stripped-center blue"></span>
     <div class="container">
