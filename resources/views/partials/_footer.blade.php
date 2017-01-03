@@ -8,7 +8,7 @@
                     dan klub renang (SAC Swimming Pro) dengan kurikulum yang berbasis US Swimming School,
                     British Swimming School, dan Canadian Red Cross.</p>
             </div>
-            <div class="columns four">
+            <div class="columns five">
                 <h6 class="bold">Get In Touch</h6>
                 <p><i class="fa fa-map-marker">&nbsp;</i><a href="#">Jalan Boni No. 28, RT 001 / RW 009, Beji <br>&nbsp;&nbsp;&nbsp;Pondok Cina
                         <br>&nbsp;&nbsp;&nbsp;Depok, Jawa Barat
@@ -16,7 +16,7 @@
                 <p><i class="fa fa-phone">&nbsp;</i>Phone : +6285718055369</p>
                 <p><i class="fa fa-envelope">&nbsp;</i>Email : <a href="mailto:sac.swimmingschool@gmail.com">sac.swimmingschool@gmail.com</a></p>
             </div>
-            <div class="columns four">
+            <div class="columns three">
                 <h6 class="bold">Our Program</h6>
                 <ul class="program">
                     <li><a href="#">SAC Swimming School</a></li>
@@ -33,7 +33,7 @@
     <div class="container">
         <div class="row">
             <div class="columns ten">
-                <span class="footer-copy">Copyright &copy; 2017 by Sailfish Swimming School. All Right Reserved.</span>
+                <span class="footer-copy">Copyright &copy; 2017 by Sailfish Swimming School.</span>
             </div>
             <div class="columns two">
                 <div class="social">

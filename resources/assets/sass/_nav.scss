@@ -10,7 +10,7 @@
 }
 
 #nav-top {
-  @media screen and (max-width: 480px) {
+  @media screen and (max-width: 768px) {
     display: none;
   }
     top: 0;
@@ -61,7 +61,7 @@
 
 #nav {
   .side-nav {
-    @media screen and (min-width: 481px){
+    @media screen and (min-width: 769px){
       display: none;
     }
     &.open{
@@ -114,7 +114,7 @@
   .side-nav-button {
     position: absolute;
     top: 15px;
-    right: -25px;
+    right: 3px;
     @media screen and (min-width: 768px){
       display: none;
     }
@@ -137,6 +137,12 @@
     opacity: 1;
     border-bottom: 1px solid rgba(219,219,219,0.5);
   }
+  @media screen and (min-width: 481px) and (max-width: 768px){
+    top: 0;
+    opacity: 1;
+    border-bottom: 1px solid rgba(219,219,219,0.5);
+
+  }
   top: 40px;
   height: $nav-height;
   opacity: 0.95;
@@ -153,7 +159,7 @@
   .right {
     display: block;
     float: right;
-    @media screen and (max-width: 480px){
+    @media screen and (max-width: 768px){
       display: none;
     }
     ul {
