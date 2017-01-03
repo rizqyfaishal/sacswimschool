@@ -31,6 +31,23 @@
                 <li><a class="item" href="#"><span class="button button-primary">Daftar</span></a></li>
             </ul>
         </div>
+        <div class="side-nav-button">
+            <button class="button-primary">
+                <i class="fa fa-navicon"></i>
+            </button>
+        </div>
+    </div>
+    <div class="side-nav">
+        <div class="side-nav-content">
+            <ul class="menu">
+                <li><a class="active item" href="#">Home</a></li>
+                <li><a class="item" href="#">About</a></li>
+                <li><a class="item" href="#">Program</a></li>
+                <li><a class="item" href="{{ action('ShopController@index') }}">Shop</a></li>
+                <li><a class="item" href="#">Contact</a></li>
+                <li><a class="item" href="#"><span class="button button-primary">Daftar</span></a></li>
+            </ul>
+        </div>
     </div>
 </div>
 

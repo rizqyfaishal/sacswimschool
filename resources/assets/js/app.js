@@ -1,6 +1,15 @@
 $(document).ready(function () {
 
     var counter = 0;
+    var open = false;
+
+    $('.side-nav-button button').on('click',function () {
+        $('.side-nav').toggleClass('open');
+    });
+
+    $('.side-nav ul li a').on('click',function () {
+        $('.side-nav').toggleClass('open');
+    });
     // $('#nav-top')
     var mark = true;
     $(window).on('scroll',function (e) {
