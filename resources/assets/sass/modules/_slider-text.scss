@@ -24,4 +24,9 @@
   position: relative;
 }
 
+.bg-swim {
+  @media screen and (max-width: 480px){
+      display: none;
+  }
+}
 

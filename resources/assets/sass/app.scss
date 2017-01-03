@@ -67,11 +67,27 @@ p.quote {
 }
 
 @media screen and (max-width: 480px){
+  .controls {
+    display: block;
+    margin: 0 auto;
+  }
+  .title-quote {
+    font-size: 140% !important;
+  }
+  p.author {
+    font-size: 130%;
+  }
    h1 {
+     font-size: 180%;
      &.text-center {
        font-size: 180%;
      }
    }
+  h2 {
+    &.text-center {
+      font-size: 150%;
+    }
+  }
 
   .subscribe-form {
     input {

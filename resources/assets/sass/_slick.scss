@@ -124,17 +124,19 @@
   button {
     z-index: 7;
     position: absolute;
-    bottom: 0;
+    bottom: -3em;
     &.slick-next {
       right: 42%;
       @media screen and (max-width: 480px){
         right: 0;
+        bottom: 8em;
       }
     }
     &.slick-prev {
       left: 42%;
       @media screen and (max-width: 480px){
         left: 0;
+        bottom: 8em;
       }
     }
 

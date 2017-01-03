@@ -5,7 +5,7 @@
     <div class="content">
         <div class="container">
             <div class="row">
-                <div class="columns five">
+                <div class="columns five bg-swim">
                     <div class="img-sketch">
                         <img src="/img/B.png" alt="Swimmer" class="swimmer-offset">
                     </div>
