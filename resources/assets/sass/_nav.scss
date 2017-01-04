@@ -4,6 +4,7 @@
   width: 100%;
   z-index: 100;
   background-color: #fff;
+  border-bottom: 1px solid rgba(219,219,219,0.5);
   p, a {
     color: rgba(38, 38, 38, 0.5);
   }
@@ -60,6 +61,7 @@
 }
 
 #nav {
+  border-bottom: 1px solid rgba(219,219,219,0.5);
   .side-nav {
     @media screen and (min-width: 769px){
       display: none;
