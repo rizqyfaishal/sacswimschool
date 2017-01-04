@@ -2,7 +2,6 @@
 
 @section('content')
     @include('partials._nav')
-
     <div class="section">
         <div class="login-container">
             <div class="login-content">
