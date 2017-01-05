@@ -6,9 +6,9 @@
         <div class="dashboard-container">
             <div class="container">
                 <div class="row">
-                    <div class="columns ten offset-by-one">
+                    <div class="columns twelve">
                         <div class="dashboard-block">
-                            <div class="row">
+                            <div class="row except">
                                 <div class="columns three">
                                     <div class="side-nav">
                                         @include('partials.dashboard._side-nav')

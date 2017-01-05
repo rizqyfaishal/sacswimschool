@@ -25,3 +25,14 @@ gulp.task('js',function () {
             .pipe(gulp.dest('./public/js/'));
     });
 });
+
+gulp.task('angular', function () {
+    del('./build/js/**/*.js').then(function () {
+        return gulp
+            .src(['./resources/assets/js/angular.min.js','./resources/assets/js/angular-ui-router.min.js','./resources/assets/js/shop.js'])
+            .pipe(concat('app.shop.js'))
+            .pipe(rename('app.shop.min.js'))
+            .pipe(uglify())
+            .pipe(gulp.dest('./public/js/'));
+    });
+});

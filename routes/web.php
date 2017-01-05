@@ -20,7 +20,8 @@ Route::get('/about',function (){
 });
 
 Route::get('/shop','ShopController@index');
-Auth::routes();
-
+Route::get('/login','Auth\LoginController@showLoginForm');
+Route::post('/login','Auth\LoginController@login');
+Route::post('/logout','Auth\LoginController@logout');
 Route::get('/home', 'HomeController@index');
 Route::get('/dashboard','DashboardController@index');

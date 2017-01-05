@@ -136,7 +136,7 @@ $(document).ready(function () {
     lightbox.option({
         'resizeDuration': 200,
         'wrapAround': true
-    })
+    });
 
     $(function() {
         $('a[href*="#"]:not([href="#"])').click(function() {
@@ -152,6 +152,13 @@ $(document).ready(function () {
             }
         });
     });
+
+    if ($.support.pjax) {
+        $.pjax.defaults.timeout = 1000; // time in milliseconds
+    }
+    $(document).pjax('#nav ul li a', '#main');
+    $(document).on('pjax:start', function() { NProgress.start(); });
+    $(document).on('pjax:end',   function() { NProgress.done();  });
 });
 
 function rotate() {
