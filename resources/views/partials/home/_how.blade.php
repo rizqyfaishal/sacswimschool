@@ -47,10 +47,16 @@
             <div class="columns twelve">
                 <h3>The fastest way to grow your business with the leader in Technology.</h3>
                 <p>Check out our options and features included.</p>
-                <form class="subscribe-form">
-                    <input type="text" name="subscribe" placeholder="Your email for subscribe" style="width: 370px;">
-                    <button type="submit" class="text-center">Send</button>
                 </form>
+                {!! Form::open(['class' => 'subscribe-form', 'method' => 'POST', 'action' => 'SubscriberController@store']) !!}
+                    {!! Form::text('email',null,['placeholder' => 'Your email for subscribe', 'style' => 'width: 370px;']) !!}
+                        <button type="submit" class="text-center">Send</button>
+                    @if ($errors->has('email'))
+                        <span class="error-block" class="text-center">
+                            <strong>{{ $errors->first('email') }}</strong>
+                        </span>
+                    @endif
+                {!! Form::close() !!}
             </div>
         </div>
     </div>

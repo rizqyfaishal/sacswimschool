@@ -10,10 +10,20 @@
              <h4 class="text-center text-white">Kategori Pencarian</h4>
              <span class="stripped-center white"></span>
              <div class="form">
-                 <form action="">
-
-                 </form>
+                    <div class="container">
+                        <div class="row">
+                            <div class="columns six offset-by-three">
+                                {!! Form::open(['class' => 'form']) !!}
+                                    {!! Form::select('category',['AAAAA' => 'AAAAA', 'BBBBB' => 'AAAA'],null) !!}
+                                    {!! Form::submit('Go',['class' => 'button text-white']) !!}
+                                {!! Form::close() !!}
+                            </div>
+                        </div>
+                    </div>
              </div>
+         </div>
+         <div class="section">
+             @include('pages.shop._product')
          </div>
      </div>
      @include('partials._footer')

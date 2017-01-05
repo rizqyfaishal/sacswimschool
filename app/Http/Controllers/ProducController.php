@@ -2,20 +2,10 @@
 
 namespace App\Http\Controllers;
 
-use App\Helper\PageDescription;
-use App\Http\Requests\SubscribeRequest;
-use App\Subscriber;
 use Illuminate\Http\Request;
-use Illuminate\Support\Facades\Session;
 
-class SubscriberController extends Controller
+class ProducController extends Controller
 {
-    public function __construct(PageDescription $page)
-    {
-        $this->middleware('auth', ['except' => 'store']);
-        $this->page = $page;
-    }
-
     /**
      * Display a listing of the resource.
      *
@@ -23,10 +13,7 @@ class SubscriberController extends Controller
      */
     public function index()
     {
-        return view('pages.dashboard.subscriber')->with([
-            'subscribers' => Subscriber::all(),
-            'page' => $this->page->setTitle('Subscriber')
-        ]);
+        //
     }
 
     /**
@@ -36,9 +23,7 @@ class SubscriberController extends Controller
      */
     public function create()
     {
-        return view('index')->with([
-            'page' => $this->page->setTitle('Subscriber')
-        ]);
+        //
     }
 
     /**
@@ -47,14 +32,9 @@ class SubscriberController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(SubscribeRequest $request)
+    public function store(Request $request)
     {
-        $subscribe = Subscriber::create($request->all());
-        if($subscribe){
-            Session::flash('subscribe_success',true);
-        } else {
-            abort(500);
-        }
+        //
     }
 
     /**

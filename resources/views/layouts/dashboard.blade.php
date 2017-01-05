@@ -16,7 +16,7 @@
                                 </div>
                                 <div class="columns nine">
                                     <div class="content">
-                                        @include('partials.dashboard._content')
+                                        @yield('dashboard-content')
                                     </div>
                                 </div>
                             </div>

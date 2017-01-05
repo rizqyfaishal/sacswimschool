@@ -11,9 +11,7 @@
 |
 */
 
-Route::get('/', function () {
-    return view('index');
-});
+Route::get('/', 'PageController@index');
 
 Route::get('/about',function (){
     return view('pages.about.index');
@@ -22,6 +20,9 @@ Route::get('/about',function (){
 Route::get('/shop','ShopController@index');
 Route::get('/login','Auth\LoginController@showLoginForm');
 Route::post('/login','Auth\LoginController@login');
-Route::post('/logout','Auth\LoginController@logout');
+Route::get('/logout','Auth\LoginController@logout');
 Route::get('/home', 'HomeController@index');
 Route::get('/dashboard','DashboardController@index');
+Route::get('/dashboard/update','DashboardController@update');
+
+Route::resource('subscriber','SubscriberController');

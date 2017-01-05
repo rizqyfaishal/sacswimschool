@@ -5,8 +5,9 @@
     background-color: #f2f4f6;
     border: 1px solid #eceef0;
     .columns {
-      &.three {
-        border-right: 1px solid #dbdbdb;
+      &.nine {
+        padding-left: 2em;
+        border-left: 1px solid #dbdbdb;
       }
     }
     .content {
