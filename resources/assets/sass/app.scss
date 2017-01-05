@@ -44,6 +44,7 @@
 @import "about";
 @import "auth";
 @import "dashboard";
+@import "_promo.scss";
 @import "nprogress";
 
 .title {
@@ -63,6 +64,10 @@
     height: 50px;
     margin: 1em auto;
   }
+}
+
+.text-white {
+  color: white;
 }
 
 p.quote {

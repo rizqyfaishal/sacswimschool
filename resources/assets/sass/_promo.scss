@@ -1,0 +1,21 @@
+#slider-promo  {
+  img {
+    &.promo-image {
+      display: block;
+      margin: 1em auto;
+    }
+  }
+  button {
+    &.button-primary {
+      background-color: transparent;
+      border: none;
+      position: absolute;
+      bottom: 45%;
+      i.fa {
+        color: #33c3f0;
+        font-size: 4em;
+        text-shadow: #262626 2px 2px 2px;
+      }
+    }
+  }
+}
