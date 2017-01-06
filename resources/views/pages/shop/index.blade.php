@@ -12,11 +12,14 @@
              <div class="form">
                     <div class="container">
                         <div class="row">
-                            <div class="columns six offset-by-three">
-                                {!! Form::open(['class' => 'form']) !!}
-                                    {!! Form::select('category',['AAAAA' => 'AAAAA', 'BBBBB' => 'AAAA'],null) !!}
-                                    {!! Form::submit('Go',['class' => 'button text-white']) !!}
-                                {!! Form::close() !!}
+                            <div class="columns twelve">
+                                <div class="category-list">
+                                    @foreach($categories as $category)
+                                        <div>
+                                            <a href="#" class="category-link">{{ $category->name }}</a>
+                                        </div>
+                                    @endforeach
+                                </div>
                             </div>
                         </div>
                     </div>

@@ -1,0 +1,35 @@
+.category {
+  button, input[type='submit'] {
+    display: block;
+    margin: 1em auto;
+    background-color: #cb2c26;
+    color: white;
+  }
+  button {
+    &.slick-prev, &.slick-next {
+      background-color: transparent;
+      color: white;
+      i.fa {
+        font-size: 3em;
+      }
+    }
+  }
+  .category-list {
+    .slick-slide {
+      width: 100px;
+    }
+    .category-link {
+      font-size: 150%;
+      text-decoration: none;
+      text-align: center;
+      display: block;
+      margin: 0 auto;
+      color: white;
+      &:hover {
+        text-decoration: underline;
+
+      }
+    }
+  }
+
+}

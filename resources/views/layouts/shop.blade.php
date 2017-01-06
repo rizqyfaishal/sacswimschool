@@ -13,7 +13,5 @@
 <body>
 @yield('content')
 <script src="../js/app.min.js"></script>
-<script src="../js/app.shop.min.js"></script>
 </body>
-
 </html>
