@@ -159,12 +159,6 @@ $(document).ready(function () {
     $(document).pjax('#nav ul li a', '#main');
     $(document).on('pjax:start', function() { NProgress.start(); });
     $(document).on('pjax:end',   function() { NProgress.done();  });
-    $('.category-list').slick({
-        slidesToShow: 6,
-        slidesToScroll: 6,
-        autoplay: true,
-        autoplaySpeed: 2000,
-    });
 
 });
 

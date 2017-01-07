@@ -31,5 +31,27 @@
       }
     }
   }
+  .input-group {
+    display: block;
+    select, button, input {
+      display: inline-block;
+    }
+    select {
+      background-color: #cb2c26;
+      color: white;
+      border: #cb2c26;
+      border-top-right-radius: 0;
+      border-bottom-right-radius: 0;
+    }
+    input {
+      margin-top: 1px;
+      height: 40px;
+      border-top-left-radius: 0;
+      border-bottom-left-radius: 0;
+      margin-left: -0.3em;
+      padding-left: 1em;
+      width: 45%;
+    }
+  }
 
 }

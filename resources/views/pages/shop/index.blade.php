@@ -12,13 +12,15 @@
              <div class="form">
                     <div class="container">
                         <div class="row">
-                            <div class="columns twelve">
+                            <div class="columns six offset-by-three">
                                 <div class="category-list">
-                                    @foreach($categories as $category)
-                                        <div>
-                                            <a href="#" class="category-link">{{ $category->name }}</a>
-                                        </div>
-                                    @endforeach
+                                    {!! Form::open(['class' => 'category-form','method' => 'POST']) !!}
+                                    <div class="input-group">
+                                        {!! Form::select('category_name',\App\ProductCategory::pluck('name','id'),null) !!}
+                                        {!! Form::text('category_q',null,['placeholder' => 'Search Everything']) !!}
+                                        <button class="button">Search</button>
+                                    </div>
+                                    {!! Form::close() !!}
                                 </div>
                             </div>
                         </div>
