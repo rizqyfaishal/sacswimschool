@@ -17,7 +17,7 @@ class CreateProductsTable extends Migration
             $table->increments('id');
             $table->string('image_url');
             $table->string('product_name');
-            $table->decimal('product_price',2);
+            $table->decimal('product_price');
             $table->integer('product_stock');
             $table->integer('product_category_id')->unsigned();
             $table->timestamps();
@@ -31,6 +31,7 @@ class CreateProductsTable extends Migration
      */
     public function down()
     {
+
         Schema::dropIfExists('products');
     }
 }

@@ -28,7 +28,34 @@
              </div>
          </div>
          <div class="section">
-             @include('pages.shop._product')
+             <h1 class="text-center">Our Product</h1>
+             <span class="stripped-center blue"></span>
+             <div class="container">
+                 <div class="row">
+                     <div class="product-list-home">
+
+                         @foreach($products as $product)
+                             <div class="columns three">
+                                 <div class="product-item">
+                                     <img src="{{ $product->image_url }}" alt="{{ $product->product_name }}">
+                                     <h3>{{ $product->product_name }}</h3>
+                                     <div class="price-section">
+                                         <div class="row">
+                                             <div class="columns six">
+                                                 <h3>Rp. {{ $product->product_price }},00</h3>
+                                             </div>
+                                             <div class="columns six">
+                                                 <button class="button-primary u-pull-right">Beli</button>
+                                             </div>
+                                         </div>
+                                     </div>
+                                 </div>
+                             </div>
+                         @endforeach
+                     </div>
+                 </div>
+
+             </div>
          </div>
      </div>
      @include('partials._footer')
