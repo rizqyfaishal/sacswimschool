@@ -8,10 +8,10 @@
     {{--<meta http-equiv="refresh" content="30">--}}
     <title>{{ $page->title }}</title>
     <link href='//fonts.googleapis.com/css?family=Raleway:400,300,600' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" href="../css/app.css">
+    <link rel="stylesheet" href="../css/shop.css">
 </head>
 <body>
 @yield('content')
-<script src="../js/app.min.js"></script>
+<script src="../js/app.shop.min.js"></script>
 </body>
 </html>

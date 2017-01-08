@@ -19,7 +19,7 @@ class ShopController extends Controller
 
         $this->page->setTitle('SAC Shop');
         $products = Product::all();
-        return view('pages.shop.index')->with([
+        return view('pages.shop.home')->with([
             'products' => $products,
             'page' => $this->page,
             'categories' => ProductCategory::all()
